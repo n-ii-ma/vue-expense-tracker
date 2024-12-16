@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // Models
-const title = defineModel<string>("title");
-const amount = defineModel<string>("amount");
+const title = defineModel("title");
+const amount = defineModel("amount");
 
 // Props
 defineProps<{
