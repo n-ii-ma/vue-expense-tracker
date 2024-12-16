@@ -13,7 +13,8 @@ defineProps<{
 <template>
   <div>
     <h3>History</h3>
-    <ul class="list">
+    <span v-if="!transactions.length">Nothing to Show</span>
+    <ul v-else class="list">
       <TransactionItem
         v-for="transaction in transactions"
         :key="transaction.id"
